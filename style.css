@@ -1,0 +1,77 @@
+
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: rgba(151, 222, 255, 0.671);
+    font-family:'Courier New', Courier, monospace;
+}
+.link {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.link a {
+    color: azure;
+}
+#bd {
+    height: 700px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+header {
+}
+h3#day {
+    color: rgb(77, 77, 77);
+    font-weight: 500;
+}
+
+#poem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(37, 37, 37);
+}
+div#messages {
+    max-width: 60%;
+    margin: 100px auto;
+}
+h2 {
+    color: rgb(94, 94, 94);
+}
+
+footer {
+    background-color: black;
+}
+
+footer div{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(255, 245, 240);
+}
+
+#message-text:after{
+ content: '|';
+ margin-left: 2px;
+ opacity: 1;
+ animation: pisca .9s infinite;
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}

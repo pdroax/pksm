@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="coracao.png" type="icon">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="link">
+        <a href="https://medium.com/@pdrodesignax/eu-sei-f584d5ceef95?postPublishedType=initial">Leia</a>    
+
+    </div>
+    <div id="bd">
+        <header>
+            <h3 id="day"><span id="dia"></span>, <span id="date" ></span></h3>
+            <h1>From: Your Future Husband</h1>
+            <h2><span id="cumpliment" ></span></h2>
+        </header>
+    
+        <div id="messages">
+            <h3>Love,</h3>
+            <div id="poem">
+                <p id="message-text"></p>
+            </div>
+        </div>
+        <div>
+            <h2>Há quantos dias eu te amo:</h2>
+            <div class="contador" id="dias"></div>
+        </div>
+
+
+        <!-- Código onvio: 1MQAPN45LFRBW9KRNZ2AJHZJ -->
+
+
+
+    </div>
+    <footer>
+        <div id="footer">
+            <h4>I Love U</h4>
+        </div>
+    </footer>  
+    <script>
+        let nome = prompt("Digite seu primeiro nome para acessar a página:");
+        let paula = "paula"
+
+        if (nome !== paula.toLocaleLowerCase()) {
+            alert("Você não pode acessar");
+            window.location.href = "https://google.com"; // redireciona se cancelar
+        } else {
+            alert("Bem-vindo, " + nome + "!");
+        }
+    </script>
+    <script>
+    
+        // Data inicial (ano, mês-1, dia)
+        const dataInicial = new Date(2024, 0, 1); // 1 de janeiro de 2024
+
+        function atualizarContagem() {
+            const hoje = new Date();
+            const diferenca = hoje - dataInicial;
+
+            const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            document.getElementById("dias").textContent = dias + " dias";
+        }
+
+        atualizarContagem();
+    </script>
+
+</body>
+</html>
