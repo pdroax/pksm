@@ -47,11 +47,10 @@
         let nome = prompt("Digite seu primeiro nome para acessar a página:");
         let paula = "paula"
 
-        if (nome !== paula.toLocaleLowerCase()) {
+        if (nome.toLocaleLowerCase() !== paula) {
             alert("Você não pode acessar");
             window.location.href = "https://google.com"; // redireciona se cancelar
         } else {
-            alert("Bem-vindo, " + nome + "!");
         }
     </script>
     <script>
